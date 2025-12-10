@@ -1,6 +1,6 @@
 const navLinks = document.getElementById("navLinks");
 const navbar = document.querySelector(".navbar");
-
+const header = document.querySelector("header");
 function toggleMenu() {
     navLinks.classList.toggle("active");
 }
@@ -12,7 +12,16 @@ document.addEventListener("click", e => {
 window.addEventListener("resize", () => {
     if (window.innerWidth > 768) navLinks.classList.remove("active");
 });
+window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const halfHeight = window.innerHeight;
 
+    if (scrollPosition >= halfHeight) {
+        header.style.background = "linear-gradient(135deg, rgba(139,111,71,0.9), rgba(166,138,100,0.9))";
+    } else {
+        header.style.background = "linear-gradient(135deg, rgba(139,111,71,0.2), rgba(166,138,100,0.2))";
+    }
+});
 const reviews = [
     { name: "Ravi Kumar", rating: 5, text: "Absolutely divine! The croissants are buttery perfection and the sourdough bread is the best I've had outside of Paris. The staff is always friendly and welcoming.", date: "2 weeks ago", helpful: 24 },
     { name: "Harsh Sharma", rating: 5, text: "I come here every Sunday for their cinnamon rolls. They're worth every calorie! The atmosphere is cozy and the coffee is excellent too.", date: "1 month ago", helpful: 180 },
