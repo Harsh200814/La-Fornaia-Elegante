@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Breads — LA FORNAIA ELEGANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
+                <span class="brand-name">LA FORNAIA ELEGANTE</span>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="index.html#products">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-wrapper">
+                    <a href="cart.html">
+                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cakes-page">
+        <section class="cakes-hero">
+            <div class="hero-inner">
+                <h1>Our Breads</h1>
+                <p>Artisanal breads baked fresh daily — wholesome, delicious, and nourishing</p>
+            </div>
+        </section>
+
+        <section class="cakes-grid-wrap">
+            <div class="cakes-grid">
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/breads/Chocolate%20Chip%20Loaf%20Cake%20-%20Julia%27s%20Cuisine.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Chocolate Chip Loaf</h3>
+                        <p class="flavour-desc">Sweet chocolate chips throughout the loaf</p>
+                        <div class="cake-meta"><span class="cake-price">₹380</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/breads/Quick%20Homemade%20Bread%20-%20Easy%2020-Minute%20Recipe.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Quick Artisan Bread</h3>
+                        <p class="flavour-desc">Freshly prepared loaf</p>
+                        <div class="cake-meta"><span class="cake-price">₹320</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/breads/Sweet%20Molasses%20Brown%20Bread.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Molasses Brown Bread</h3>
+                        <p class="flavour-desc">Rich molasses flavor, moist and hearty</p>
+                        <div class="cake-meta"><span class="cake-price">₹180</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image no-zoom" style="background-image: url('Images/breads/wheat_bread.png'); background-position: center top;"></div>
+                    <div class="cake-info">
+                        <h3>Rustic Wheat</h3>
+                        <p class="flavour-desc">Wholesome wheat bread with nutty flavor</p>
+                        <div class="cake-meta"><span class="cake-price">₹300</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/breads/bread3.jpg');"></div>
+                    <div class="cake-info">
+                        <h3>Sourdough Starter</h3>
+                        <p class="flavour-desc">Tangy artisan sourdough with character</p>
+                        <div class="cake-meta"><span class="cake-price">₹200</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/breads/garlic_bread.png');"></div>
+                    <div class="cake-info">
+                        <h3>Chef's Signature Garlic Bread</h3>
+                        <p class="flavour-desc">Our special bakery blend with secret spices</p>
+                        <div class="cake-meta"><span class="cake-price">₹220</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

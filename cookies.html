@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cookies — LA FORNAIA ELEGANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
+                <span class="brand-name">LA FORNAIA ELEGANTE</span>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="index.html#products">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-wrapper">
+                    <a href="cart.html">
+                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cakes-page">
+        <section class="cakes-hero">
+            <div class="hero-inner">
+                <h1>Our Cookies</h1>
+                <p>Hand-baked cookies with the finest ingredients — pure comfort in every bite.</p>
+            </div>
+        </section>
+
+        <section class="cakes-grid-wrap">
+            <div class="cakes-grid">
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cookies/oatmeal%20cookie.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Oatmeal Raisin</h3>
+                        <p class="flavour-desc">Wholesome oats with plump raisins.</p>
+                        <div class="cake-meta"><span class="cake-price">₹45</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cookies/Oatmeal%20Cookies%20Recipe.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Classic Oatmeal</h3>
+                        <p class="flavour-desc">Traditional recipe with crispy edges.</p>
+                        <div class="cake-meta"><span class="cake-price">₹50</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cookies/The%20BEST%20Sugar%20Cookies%20-%20Soft%20%26%20Chewy%20_%20Butternut%20Bakery%20(1).jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Soft Sugar Cookies</h3>
+                        <p class="flavour-desc">Buttery soft cookies with delicate flavor.</p>
+                        <div class="cake-meta"><span class="cake-price">₹40</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cookies/Gluten%20free%20%26%20Vegan%20Churros.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Vegan Churros</h3>
+                        <p class="flavour-desc">Gluten-free and plant-based delight</p>
+                        <div class="cake-meta"><span class="cake-price">₹55</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cookies/_%20(2).jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Lotus Biscoff</h3>
+                        <p class="flavour-desc">Rich caramelized flavour</p>
+                        <div class="cake-meta"><span class="cake-price">₹60</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cookies/_.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Chocochip Cookie</h3>
+                        <p class="flavour-desc">Super soft and chewy</p>
+                        <div class="cake-meta"><span class="cake-price">₹65</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

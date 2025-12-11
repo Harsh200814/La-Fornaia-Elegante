@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
     font-family: 'Georgia', serif;
     background: #faf8f5;
@@ -207,8 +209,10 @@ header {
     height: 280px;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: transform 0.35s ease;
+    transform-origin: center center;
 }
 
 .product-image::after {
@@ -220,7 +224,11 @@ header {
 }
 
 .product-card:hover .product-image {
-    transform: scale(1.08);
+    transform: scale(1.04);
+}
+
+.product-card:hover .product-image.no-zoom {
+    transform: scale(1.01);
 }
 
 .product-name {
@@ -772,7 +780,7 @@ header {
 }
 
 .cake-card {
-    background: #FBF7F2;
+    background: #F3E6D0;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);

@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cheesecakes — LA FORNAIA ELEGANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
+                <span class="brand-name">LA FORNAIA ELEGANTE</span>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="index.html#products">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-wrapper">
+                    <a href="cart.html">
+                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cakes-page">
+        <section class="cakes-hero">
+            <div class="hero-inner">
+                <h1>Our Cheesecakes</h1>
+                <p>Creamy, indulgent cheesecakes — a slice of heaven.</p>
+            </div>
+        </section>
+
+        <section class="cakes-grid-wrap">
+            <div class="cakes-grid">
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cheesecake/Classic%20New%20York%20Cheesecake%20Recipe.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Classic New York</h3>
+                        <p class="flavour-desc">Timeless cheesecake with graham cracker base.</p>
+                        <div class="cake-meta"><span class="cake-price">₹250</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cheesecake/biscoffCheesecake.png');"></div>
+                    <div class="cake-info">
+                        <h3>Biscoff Bliss</h3>
+                        <p class="flavour-desc">Creamy base with biscoff cookie crunch.</p>
+                        <div class="cake-meta"><span class="cake-price">₹260</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cheesecake/Strawberry%20Cheesecake%20Recipe.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Strawberry Bliss</h3>
+                        <p class="flavour-desc">Fresh strawberry topping on velvety base.</p>
+                        <div class="cake-meta"><span class="cake-price">₹240</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cheesecake/blackberryLemonCheesecake.png');"></div>
+                    <div class="cake-info">
+                        <h3>Blackberry Lemon</h3>
+                        <p class="flavour-desc">Tangy lemon with blackberry swirls.</p>
+                        <div class="cake-meta"><span class="cake-price">₹300</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cheesecake/jelly%20cheescake.jpg');"></div>
+                    <div class="cake-info">
+                        <h3>Jelly Crown</h3>
+                        <p class="flavour-desc">Silky cheesecake topped with vibrant jelly.</p>
+                        <div class="cake-meta"><span class="cake-price">₹200</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/cheesecake/red%20velvet%20cheescake.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Red Velvet</h3>
+                        <p class="flavour-desc">Elegant red velvet with cream cheese frosting.</p>
+                        <div class="cake-meta"><span class="cake-price">₹320</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

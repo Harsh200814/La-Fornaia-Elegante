@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Croissants — LA FORNAIA ELEGANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
+                <span class="brand-name">LA FORNAIA ELEGANTE</span>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="index.html#products">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-wrapper">
+                    <a href="cart.html">
+                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cakes-page">
+        <section class="cakes-hero">
+            <div class="hero-inner">
+                <h1>Our Croissants</h1>
+                <p>Authentic French croissants — flaky, buttery, and perfectly layered</p>
+            </div>
+        </section>
+
+        <section class="cakes-grid-wrap">
+            <div class="cakes-grid">
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/crossiants/chocolate_croissant.png');"></div>
+                    <div class="cake-info">
+                        <h3>Chocolate Pain au Chocolat</h3>
+                        <p class="flavour-desc">Rich chocolate bars wrapped in pastry</p>
+                        <div class="cake-meta"><span class="cake-price">₹150</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/crossiants/Berries%20and%20Cream%20Croissants.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Berries & Cream</h3>
+                        <p class="flavour-desc">Fresh berries with whipped cream filling</p>
+                        <div class="cake-meta"><span class="cake-price">₹170</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/crossiants/Strawberry_Croissant.png');"></div>
+                    <div class="cake-info">
+                        <h3>Strawberry Delight</h3>
+                        <p class="flavour-desc">Sweet strawberries and vanilla custard</p>
+                        <div class="cake-meta"><span class="cake-price">₹160</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/crossiants/butteryHamCroissant.png');"></div>
+                    <div class="cake-info">
+                        <h3>Ham & Cheese</h3>
+                        <p class="flavour-desc">Savory ham with melted cheese</p>
+                        <div class="cake-meta"><span class="cake-price">₹140</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/crossiants/cheese_croissant.png');"></div>
+                    <div class="cake-info">
+                        <h3>Classic Cheese</h3>
+                        <p class="flavour-desc">Creamy cheese with flaky butter layers</p>
+                        <div class="cake-meta"><span class="cake-price">₹135</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/crossiants/crossiant%201.jpg');"></div>
+                    <div class="cake-info">
+                        <h3>Butter Classic</h3>
+                        <p class="flavour-desc">Pure butter croissant with golden crust</p>
+                        <div class="cake-meta"><span class="cake-price">₹100</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Donuts — LA FORNAIA ELEGANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
+                <span class="brand-name">LA FORNAIA ELEGANTE</span>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="index.html#products">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-wrapper">
+                    <a href="cart.html">
+                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cakes-page">
+        <section class="cakes-hero">
+            <div class="hero-inner">
+                <h1>Our Donuts</h1>
+                <p>Delicious glazed and filled donuts — perfect treats for any time</p>
+            </div>
+        </section>
+
+        <section class="cakes-grid-wrap">
+            <div class="cakes-grid">
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/donuts/Homemade%20Krispy%20Kreme-Style%20Doughnuts.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Krispy Kreme Style</h3>
+                        <p class="flavour-desc">Classic glazed donuts, fluffy and light</p>
+                        <div class="cake-meta"><span class="cake-price">₹80</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/donuts/strawberry_donuts.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Strawberry Delights</h3>
+                        <p class="flavour-desc">Fresh strawberry jam filled donuts</p>
+                        <div class="cake-meta"><span class="cake-price">₹95</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/donuts/Red%20Velvet%20Donuts%20-%20Baker%20by%20Nature.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Red Velvet</h3>
+                        <p class="flavour-desc">Luxurious red velvet with cream cheese</p>
+                        <div class="cake-meta"><span class="cake-price">₹120</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/donuts/Vegan%20Chocolate%20Donuts.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Death by Chocolate</h3>
+                        <p class="flavour-desc">bursting flavour with every bite</p>
+                        <div class="cake-meta"><span class="cake-price">₹100</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/donuts/_%20(3).jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Choco-Vanilla Mix</h3>
+                        <p class="flavour-desc">Best of both worlds, swirled together</p>
+                        <div class="cake-meta"><span class="cake-price">₹90</span></div>
+                    </div>
+                </article>
+
+                <article class="cake-card">
+                    <div class="cake-image" style="background-image: url('Images/donuts/Raspberry%20Cheesecake%20Stuffed%20Donuts%20🍩🍓🧀_Sugar-dusted,%20cream-filled%20clouds%20of%20joy%20with%20a%20pop%20of%20raspberry%20tang%20—%20basically%20dessert%20royalty___Ingredients_✔️%202%20½%20cups%20all-purpose%20flour%20–%20Light,%20pillowy%20base%20for%20perfect%20donut.jpeg');"></div>
+                    <div class="cake-info">
+                        <h3>Raspberry Cheesecake</h3>
+                        <p class="flavour-desc">Creamy cheesecake donuts with raspberry filling</p>
+                        <div class="cake-meta"><span class="cake-price">₹110</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
