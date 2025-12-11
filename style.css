@@ -351,51 +351,6 @@ header {
             background: #0a0a0a;
             padding: 60px 20px;
         }
-
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-
-        .filter-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.03);
-            padding: 15px 30px;
-            border-radius: 50px;
-            border: 1px solid rgba(218, 165, 32, 0.2);
-        }
-
-        .filter-btn {
-            background: transparent;
-            border: 1px solid rgba(218, 165, 32, 0.4);
-            color: #daa520;
-            padding: 12px 28px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            font-family: 'Arial', sans-serif;
-            font-size: 0.95em;
-            letter-spacing: 1px;
-        }
-
-        .filter-btn:hover {
-            background: rgba(218, 165, 32, 0.1);
-            border-color: #daa520;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
-        }
-
-        .filter-btn.active {
-            background: linear-gradient(135deg, #daa520, #ffd700);
-            color: #000;
-            border-color: transparent;
-            box-shadow: 0 10px 30px rgba(218, 165, 32, 0.4);
-        }
-
         .reviews-flex {
             display: flex;
             flex-wrap: wrap;
@@ -558,7 +513,6 @@ header {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 20px 50px rgba(218, 165, 32, 0.6);
         }
-/* ---------- Footer ---------- */
 .Footer {
     background: linear-gradient(180deg, #2b2a29 0%, #151312 100%);
     color: #efe9e1;
@@ -570,8 +524,6 @@ header {
     max-width: 90rem;
     margin: 0 auto;
 }
-
-/* footer top */
 .Footer .footer-top {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
