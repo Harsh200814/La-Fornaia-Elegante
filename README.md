@@ -1,6 +1,6 @@
 🎓 La Fornaia Elegante
 
-La Fornaia Elegante is a responsive bakery website developed as part of a college project. The website demonstrates practical skills in web development, including HTML, CSS, and JavaScript, and showcases the design of a modern, visually appealing bakery website.
+La Fornaia Elegante is a responsive bakery website developed as part of a college project. The website demonstrates practical skills in web development (HTML, CSS, and JavaScript) and showcases the design of a modern, visually appealing bakery website.
 
 📖 Project Overview
 
@@ -24,7 +24,6 @@ HTML5	Structure of web pages
 CSS3	Styling, layouts, animations, and responsive design
 JavaScript	Interactive elements and menu navigation
 Images / Media	Visual presentation and branding
-
 📂 Project Structure
 La‑Fornaia‑Elegante/
 ├── index.html             # Homepage
@@ -75,6 +74,9 @@ Gain experience in UI/UX design and branding
 👥 Team / Authors
 
 Project Developers:
+
 HARSH SHARMA
-ARSHNOOR SINGH 
+
+ARSHNOOR SINGH
+
 RISHI BHARDWAJ
