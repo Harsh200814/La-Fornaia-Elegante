@@ -246,7 +246,7 @@ header {
     background: transparent;
 }
        .hero-section {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #F5F0E8 0%, #E9D2A6 100%);
             padding: 80px 20px;
             position: relative;
             overflow: hidden;
@@ -259,7 +259,7 @@ header {
             right: -50%;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(218, 165, 32, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(139, 111, 71, 0.15) 0%, transparent 70%);
             animation: pulse 8s ease-in-out infinite;
         }
 
@@ -282,14 +282,10 @@ header {
 
         .header h1 {
             font-size: 4em;
-            background: linear-gradient(135deg, #daa520, #ffd700, #daa520);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #8B6F47;
             margin-bottom: 15px;
             letter-spacing: 2px;
-            animation: shimmer 3s ease-in-out infinite;
+            font-weight: bold;
         }
 
         @keyframes shimmer {
@@ -299,7 +295,7 @@ header {
 
         .header p {
             font-size: 1.3em;
-            color: #b8b8b8;
+            color: #4A2E1F;
             font-family: 'Arial', sans-serif;
             letter-spacing: 1px;
         }
@@ -308,15 +304,15 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(218, 165, 32, 0.2);
+            background: rgba(248, 230, 210, 0.6);
+            backdrop-filter: blur(10px);
+            border: 2px solid #8B6F47;
             border-radius: 25px;
             padding: 50px 30px;
             margin-bottom: 50px;
             flex-wrap: wrap;
             gap: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 24px rgba(74, 46, 31, 0.15);
         }
 
         .average-rating {
@@ -328,27 +324,24 @@ header {
         .average-rating .score {
             font-size: 5em;
             font-weight: bold;
-            background: linear-gradient(135deg, #daa520, #ffd700);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #8B6F47;
         }
 
         .stars {
-            color: #daa520;
+            color: #cbb015e6;
             font-size: 2.5em;
             letter-spacing: 5px;
-            text-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+            text-shadow: 0 0 10px rgba(139, 111, 71, 0.3);
         }
 
         .total-reviews {
-            color: #b8b8b8;
+            color: #4A2E1F;
             margin-top: 15px;
             font-size: 1.1em;
         }
 
         .main-content {
-            background: #0a0a0a;
+            background: linear-gradient(135deg, #F5F0E8 0%, #E9D2A6 100%);
             padding: 60px 20px;
         }
         .reviews-flex {
@@ -362,14 +355,15 @@ header {
         .review-card {
             flex: 1 1 400px;
             max-width: 450px;
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(218, 165, 32, 0.2);
+            background: #f8e6d2;
+            backdrop-filter: none;
+            border: 2px solid #8B6F47;
             border-radius: 20px;
             padding: 35px;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
+            box-shadow: 0 8px 20px rgba(74, 46, 31, 0.12);
         }
 
         .review-card::before {
@@ -379,15 +373,15 @@ header {
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(218, 165, 32, 0.05) 0%, transparent 100%);
+            background: linear-gradient(135deg, rgba(139, 111, 71, 0.08) 0%, transparent 100%);
             opacity: 0;
             transition: opacity 0.5s ease;
         }
 
         .review-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 25px 60px rgba(218, 165, 32, 0.3);
-            border-color: #daa520;
+            box-shadow: 0 12px 28px rgba(74, 46, 31, 0.15), 0 0 30px rgba(255, 215, 0, 0.3);
+            border-color: #FFD700;
         }
 
         .review-card:hover::before {
@@ -423,28 +417,28 @@ header {
         }
 
         .reviewer-info h3 {
-            color: #fff;
+            color: #8B6F47;
             font-size: 1.2em;
             margin-bottom: 5px;
             letter-spacing: 1px;
         }
 
         .review-stars {
-            color: #daa520;
+            color: #ca9308;
             margin: 5px 0;
             font-size: 1.1em;
             text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
         }
 
         .review-date {
-            color: #888;
+            color: #8B6F47;
             font-size: 0.85em;
             margin-top: 5px;
             font-family: 'Arial', sans-serif;
         }
 
         .review-text {
-            color: #c8c8c8;
+            color: #4A2E1F;
             line-height: 1.8;
             margin-bottom: 20px;
             font-family: 'Arial', sans-serif;
@@ -458,34 +452,35 @@ header {
             justify-content: space-between;
             align-items: center;
             padding-top: 20px;
-            border-top: 1px solid rgba(218, 165, 32, 0.2);
+            border-top: 1px solid rgba(139, 111, 71, 0.2);
             position: relative;
             z-index: 1;
         }
 
         .helpful-btn {
             background: transparent;
-            border: 1px solid rgba(218, 165, 32, 0.4);
+            border: 2px solid #8B6F47;
             padding: 10px 20px;
             border-radius: 25px;
             cursor: pointer;
-            color: #daa520;
+            color: #8B6F47;
             font-size: 0.9em;
             transition: all 0.4s ease;
             font-family: 'Arial', sans-serif;
         }
 
         .helpful-btn:hover {
-            background: rgba(218, 165, 32, 0.1);
-            border-color: #daa520;
+            background: rgba(139, 111, 71, 0.1);
+            border-color: #FFD700;
             transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(218, 165, 32, 0.3);
+            box-shadow: 0 5px 20px rgba(139, 111, 71, 0.2);
         }
 
         .helpful-btn.active {
-            background: linear-gradient(135deg, #daa520, #ffd700);
-            color: #000;
-            border-color: transparent;
+            background: #8B6F47;
+            color: #fff;
+            border-color: #8B6F47;
+            box-shadow: 0 5px 20px rgba(139, 111, 71, 0.4);
         }
 
         .cta-section {
@@ -511,7 +506,7 @@ header {
 
         .add-review-btn:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 20px 50px rgba(218, 165, 32, 0.6);
+            box-shadow: 0 20px 50px rgba(238, 181, 36, 0.6);
         }
 .Footer {
     background: linear-gradient(180deg, #2b2a29 0%, #151312 100%);
@@ -553,7 +548,7 @@ header {
 }
 
 .Footer h4 {
-    color: #ffd700;
+    color: #d9c032dd;
     font-size: 1rem;
     margin-bottom: 0.65rem;
 }

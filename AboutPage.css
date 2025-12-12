@@ -177,11 +177,12 @@ header {
 
         .hero-content h1 {
             font-size: 5em;
-            background: linear-gradient(135deg, #daa520, #ffd700, #daa520);
+            background: linear-gradient(135deg, #daa520, #bea410, #daa520d0);
             background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            color: transparent;
             margin-bottom: 20px;
             letter-spacing: 3px;
             animation: shimmer 3s ease-in-out infinite;
@@ -224,7 +225,7 @@ header {
 
         .story-text h2 {
             font-size: 3em;
-            color: #daa520;
+            color: #ca9c27;
             margin-bottom: 30px;
             letter-spacing: 2px;
         }
@@ -243,17 +244,20 @@ header {
             backdrop-filter: blur(20px);
             border: 1px solid rgba(218, 165, 32, 0.2);
             border-radius: 25px;
-            padding: 40px;
+            padding: 20px;
             min-height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 5em;
             transition: all 0.5s ease;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
 
         .story-image:hover {
-            border-color: #daa520;
+            border-color: #be9b41;
             box-shadow: 0 25px 60px rgba(218, 165, 32, 0.3);
             transform: scale(1.02);
         }
@@ -265,7 +269,7 @@ header {
         .section-title {
             text-align: center;
             font-size: 3em;
-            color: #daa520;
+            color: #a97c0b;
             margin-bottom: 60px;
             letter-spacing: 2px;
         }
@@ -320,7 +324,7 @@ header {
         }
 
         .value-card h3 {
-            color: #daa520;
+            color: #727c05ee;
             font-size: 1.8em;
             margin-bottom: 15px;
             letter-spacing: 1px;
@@ -368,10 +372,11 @@ header {
         .stat-number {
             font-size: 4em;
             font-weight: bold;
-            background: linear-gradient(135deg, #daa520, #ffd700);
+            background: linear-gradient(135deg, #9bb51bd6, #ebd34e);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            color: transparent;
             margin-bottom: 10px;
         }
 
