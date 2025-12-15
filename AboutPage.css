@@ -256,6 +256,17 @@ header {
             background-repeat: no-repeat;
         }
 
+        /* Make story image smaller and fit better on narrow screens */
+        @media (max-width: 520px) {
+            .story-image {
+                min-height: 220px;
+                padding: 12px;
+                font-size: 3.2em;
+                border-radius: 18px;
+            }
+            .story-text p { font-size: 1rem; }
+        }
+
         .story-image:hover {
             border-color: #be9b41;
             box-shadow: 0 25px 60px rgba(218, 165, 32, 0.3);

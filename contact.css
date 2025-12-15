@@ -220,6 +220,24 @@ header {
 }
 .social a img:hover { transform: translateY(-3px) scale(1.03); opacity: 1; }
 
+/* Mobile navbar behaviour */
+@media (max-width: 48rem) {
+    .navbar { flex-wrap: wrap; padding: 1rem 3%; }
+    .menu-toggle { display: flex; order: 3; }
+    .logo-section { order: 1; }
+    .nav-links { order: 4; width: 100%; flex-direction: column; gap: 0; padding: 1rem 0; max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .nav-links.active { max-height: 25rem; }
+    .nav-links li { width: 100%; text-align: center; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.2); }
+    .nav-links li:last-child { border-bottom: none; }
+    .logo { width: 3.5rem; height: 3.5rem; }
+}
+
+@media (max-width: 30rem) {
+    .navbar { padding: 0.75rem 2%; min-height: 4rem; }
+    .logo { width: 3rem; height: 3rem; }
+    .logo-section { gap: 0.5rem; }
+}
+
 .copyright { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
 .footer-image{
  margin: 40px;
