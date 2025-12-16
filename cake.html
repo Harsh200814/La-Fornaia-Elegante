@@ -1,120 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Cakes — LA FORNAIA ELEGANTE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
-</head>
-<body>
-    <!-- Header (same as index) -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-section">
-                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
-                <span class="brand-name">LA FORNAIA ELEGANTE</span>
+      <nav class="navbar">
+        <a href="index.html" class="logo-section">
+          <img
+            src="Images/logo.jpeg"
+            alt="LA FORNAIA ELEGANTE Logo"
+            class="logo"
+          />
+          <span class="brand-name">LA FORNAIA ELEGANTE</span>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="index.html#products">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="cart-wrapper">
+            <a href="cart.html">
+              <img
+                src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+                alt="Shopping Cart"
+                class="cart-icon"
+              />
+              <span class="cart-count">0</span>
             </a>
-
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="index.html#products">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="cart-wrapper">
-                    <a href="cart.html">
-                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
-                        <span class="cart-count">0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="cakes-page">
-        <section class="cakes-hero">
-            <div class="hero-inner">
-                <h1>Our Cakes</h1>
-                <p>Handcrafted cakes — elevation in every slice</p>
+      <section class="cakes-hero">
+        <div class="hero-inner">
+          <h1>Our Cakes</h1>
+          <p>Handcrafted cakes — elevation in every slice</p>
+        </div>
+      </section>
+
+      <section class="cakes-grid-wrap">
+        <div class="cakes-grid">
+          <article class="cake-card">
+            <div
+              class="cake-image"
+              style="
+                background-image: url('Images/cakes/50%20Vintage%20Inspired%20Lambeth%20Cakes%20That%27re%20So%20Trendy%20_%20Blue%20Lambeth%20White%20Cake.jpeg');
+              "
+            ></div>
+            <div class="cake-info">
+              <h3>Vanilla Lambeth</h3>
+              <p class="flavour-desc">
+                Classic vanilla sponge with buttercream finish
+              </p>
+              <div class="cake-meta">
+                <span class="cake-price">₹1,800</span>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Vanilla Lambeth"
+                  data-price="1800"
+                  data-image="Images/cakes/50%20Vintage%20Inspired%20Lambeth%20Cakes%20That%27re%20So%20Trendy%20_%20Blue%20Lambeth%20White%20Cake.jpeg"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
-        </section>
+          </article>
 
-        <section class="cakes-grid-wrap">
-            <div class="cakes-grid">
-                <article class="cake-card">
-                    <div class="cake-image" style="background-image: url('Images/cakes/50%20Vintage%20Inspired%20Lambeth%20Cakes%20That%27re%20So%20Trendy%20_%20Blue%20Lambeth%20White%20Cake.jpeg');"></div>
-                    <div class="cake-info">
-                        <h3>Vanilla Lambeth</h3>
-                        <p class="flavour-desc">Classic vanilla sponge with buttercream finish</p>
-                        <div class="cake-meta"><span class="cake-price">₹1,800</span></div>
-                    </div>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image" style="background-image: url('Images/cakes/Blueberry_cake.jpeg');"></div>
-                    <div class="cake-info">
-                        <h3>Blueberry Delight</h3>
-                        <p class="flavour-desc">Moist blueberry sponge with cream cheese frosting</p>
-                        <div class="cake-meta"><span class="cake-price">₹1,600</span></div>
-                    </div>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image" style="background-image: url('Images/cakes/Gooey\ Coffee\ Caramel\ Cake\ _\ ChocolateCoveredAmy.jpeg');"></div>
-                    <div class="cake-info">
-                        <h3>Coffee Caramel</h3>
-                        <p class="flavour-desc">Rich coffee sponge topped with gooey caramel</p>
-                        <div class="cake-meta"><span class="cake-price">₹1,900</span></div>
-                    </div>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image" style="background-image: url('Images/cakes/chocolate%20cake.jpg');"></div>
-                    <div class="cake-info">
-                        <h3>Classic Chocolate</h3>
-                        <p class="flavour-desc">Decadent chocolate layers with ganache.</p>
-                        <div class="cake-meta"><span class="cake-price">₹1,700</span></div>
-                    </div>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image" style="background-image: url('Images/cakes/pancake.jpg');"></div>
-                    <div class="cake-info">
-                        <h3>Buttery Pancake</h3>
-                        <p class="flavour-desc">Light layers with maple buttercream</p>
-                        <div class="cake-meta"><span class="cake-price">₹1,400</span></div>
-                    </div>
-                </article>
-
-                <article class="cake-card">
-                    <div class="cake-image" style="background-image: url('Images/cakes/˚౨ৎ.jpeg');"></div>
-                    <div class="cake-info">
-                        <h3>Chef's Special</h3>
-                        <p class="flavour-desc">Seasonal special — ask in store for details</p>
-                        <div class="cake-meta"><span class="cake-price">₹2,200</span></div>
-                    </div>
-                </article>
+          <article class="cake-card">
+            <div
+              class="cake-image"
+              style="background-image: url('Images/cakes/Blueberry_cake.jpeg')"
+            ></div>
+            <div class="cake-info">
+              <h3>Blueberry Delight</h3>
+              <p class="flavour-desc">
+                Moist blueberry sponge with cream cheese frosting
+              </p>
+              <div class="cake-meta">
+                <span class="cake-price">₹1,600</span>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Blueberry Delight"
+                  data-price="1600"
+                  data-image="Images/cakes/Blueberry_cake.jpeg"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
-        </section>
+          </article>
+
+          <article class="cake-card">
+            <div
+              class="cake-image"
+              style="
+                background-image: url('Images/cakes/Gooey\ Coffee\ Caramel\ Cake\ _\ ChocolateCoveredAmy.jpeg');
+              "
+            ></div>
+            <div class="cake-info">
+              <h3>Coffee Caramel</h3>
+              <p class="flavour-desc">
+                Rich coffee sponge topped with gooey caramel
+              </p>
+              <div class="cake-meta">
+                <span class="cake-price">₹1,900</span>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Coffee Caramel"
+                  data-price="1900"
+                  data-image="Images/cakes/Gooey\ Coffee\ Caramel\ Cake\ _\ ChocolateCoveredAmy.jpeg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cake-card">
+            <div
+              class="cake-image"
+              style="background-image: url('Images/cakes/chocolate%20cake.jpg')"
+            ></div>
+            <div class="cake-info">
+              <h3>Classic Chocolate</h3>
+              <p class="flavour-desc">
+                Decadent chocolate layers with ganache.
+              </p>
+              <div class="cake-meta">
+                <span class="cake-price">₹1,700</span>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Classic Chocolate"
+                  data-price="1700"
+                  data-image="Images/cakes/chocolate%20cake.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cake-card">
+            <div
+              class="cake-image"
+              style="background-image: url('Images/cakes/pancake.jpg')"
+            ></div>
+            <div class="cake-info">
+              <h3>Buttery Pancake</h3>
+              <p class="flavour-desc">Light layers with maple buttercream</p>
+              <div class="cake-meta">
+                <span class="cake-price">₹1,400</span>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Buttery Pancake"
+                  data-price="1400"
+                  data-image="Images/cakes/pancake.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cake-card">
+            <div
+              class="cake-image"
+              style="background-image: url('Images/cakes/˚౨ৎ.jpeg')"
+            ></div>
+            <div class="cake-info">
+              <h3>Chef's Special</h3>
+              <p class="flavour-desc">
+                Seasonal special — ask in store for details
+              </p>
+              <div class="cake-meta">
+                <span class="cake-price">₹2,200</span>
+                                <button
+                  class="add-to-cart-btn"
+                  data-name="Chef's Special"
+                  data-price="2200"
+                  data-image="Images/cakes/˚౨ৎ.jpeg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </body>
 </html>

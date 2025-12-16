@@ -1,182 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LA FORNAIA ELEGANTE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
-</head>
-<body>
-    <!-- Nav Bar -->
-<header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-section">
-            <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
-            <span class="brand-name">LA FORNAIA ELEGANTE</span>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo-section">
+          <img
+            src="Images/logo.jpeg"
+            alt="LA FORNAIA ELEGANTE Logo"
+            class="logo"
+          />
+          <span class="brand-name">LA FORNAIA ELEGANTE</span>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="index.html#products">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="cart-wrapper">
+            <a href="cart.html">
+              <img
+                src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+                alt="Shopping Cart"
+                class="cart-icon"
+              />
+              <span class="cart-count">0</span>
             </a>
-
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="index.html#products">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="cart-wrapper">
-                    <a href="cart.html">
-                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
-                        <span class="cart-count">0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div class="video-container">
-    <video autoplay muted loop playsinline id="bg-video">
-        <source src="./Media/back video.mp4" type="video/mp4">
-     </video>
-    <video class="bg-video" autoplay muted loop playsinline>
-        <source src="./Media/back4 video.mp4" type="video/mp4">
-    </video>
+      <video autoplay muted loop playsinline id="bg-video">
+        <source src="./Media/back video.mp4" type="video/mp4" />
+      </video>
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="./Media/back4 video.mp4" type="video/mp4" />
+      </video>
 
-    <video class="bg-video" autoplay muted loop playsinline>
-        <source src="./Media/back3 video.mp4" type="video/mp4">
-    </video>
-   </div>
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="./Media/back3 video.mp4" type="video/mp4" />
+      </video>
+      <div class="video-text">
+        <h1 id="typewriter"></h1>
+        <p>Taste the elegance</p>
+      </div>
+    </div>
     <section class="Product" id="products">
-        <div class="Our-Product">
-            <h2 class="product-title">Our Products</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <a href="./cake.html" style="text-decoration: none;">
-                    <div class="product-image" style="background-image: url('./Images/cakes/Gooey\ Coffee\ Caramel\ Cake\ _\ ChocolateCoveredAmy.jpeg');">
-                    </div>
-                    <h3 class="product-name">Cakes</h3>
-                    </a>
-                </div>
+      <div class="Our-Product">
+        <h2 class="product-title">Our Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="./cake.html" style="text-decoration: none">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./Images/cakes/Gooey\ Coffee\ Caramel\ Cake\ _\ ChocolateCoveredAmy.jpeg');
+                "
+              ></div>
+              <h3 class="product-name">Cakes</h3>
+            </a>
+          </div>
 
-                <div class="product-card">
-                    <a href="./cheesecake.html" style="text-decoration: none;">
-                    <div class="product-image" style="background-image: url('./Images/cheesecake/Classic\ New\ York\ Cheesecake\ Recipe.jpeg');">
-                    </div>
-                    <h3 class="product-name">Cheesecake</h3>
-                    </a>
-                </div>
+          <div class="product-card">
+            <a href="./cheesecake.html" style="text-decoration: none">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./Images/cheesecake/Classic\ New\ York\ Cheesecake\ Recipe.jpeg');
+                "
+              ></div>
+              <h3 class="product-name">Cheesecake</h3>
+            </a>
+          </div>
 
-                <div class="product-card">
-                    <a href="./cookies.html" style="text-decoration: none;">
-                    <div class="product-image" style="background-image: url('./Images/cookies/Oatmeal Cookies Recipe.jpeg');">
-                    </div>
-                    <h3 class="product-name">Cookies</h3>
-                    </a>
-                </div>
+          <div class="product-card">
+            <a href="./cookies.html" style="text-decoration: none">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./Images/cookies/Oatmeal Cookies Recipe.jpeg');
+                "
+              ></div>
+              <h3 class="product-name">Cookies</h3>
+            </a>
+          </div>
 
-                <div class="product-card">
-                    <a href="./croissant.html" style="text-decoration: none;">
-                    <div class="product-image" style="background-image: url('./Images/crossiants/crossiant\ 1.jpg');">
-                    </div>
-                    <h3 class="product-name">Croissants</h3>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="./donuts.html" style="text-decoration: none;">
-                    <div class="product-image" style="background-image: url('./Images/donuts/strawberry_donuts.jpeg');">
-                    </div>
-                    <h3 class="product-name">Donuts</h3>
-                    </a>
-                </div>
+          <div class="product-card">
+            <a href="./croissant.html" style="text-decoration: none">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./Images/crossiants/crossiant\ 1.jpg');
+                "
+              ></div>
+              <h3 class="product-name">Croissants</h3>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./donuts.html" style="text-decoration: none">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./Images/donuts/strawberry_donuts.jpeg');
+                "
+              ></div>
+              <h3 class="product-name">Donuts</h3>
+            </a>
+          </div>
 
-                <div class="product-card">
-                    <a href="./breads.html" style="text-decoration: none;">
-                    <div class="product-image" style="background-image: url('./Images/breads/Quick Homemade Bread - Easy 20-Minute Recipe.jpeg');">
-                    </div>
-                    <h3 class="product-name">Breads</h3>
-                    </a>
-                </div>
-            </div>
+          <div class="product-card">
+            <a href="./breads.html" style="text-decoration: none">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./Images/breads/Quick Homemade Bread - Easy 20-Minute Recipe.jpeg');
+                "
+              ></div>
+              <h3 class="product-name">Breads</h3>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
     <div class="hero-section">
-        <div class="reviews-container">
-            <div class="header">
-                <h1>CUSTOMER REVIEWS</h1>
-                <p>Exceptional Quality • Timeless Taste</p>
-            </div>
-
-            <div class="rating-summary">
-                <div class="average-rating">
-                    <div class="score">4.8</div>
-                    <div class="stars">★★★★★</div>
-                    <div class="total-reviews">AVERAGE RATING</div>
-                </div>
-            </div>
-
+      <div class="reviews-container">
+        <div class="header">
+          <h1>CUSTOMER REVIEWS</h1>
+          <p>Exceptional Quality • Timeless Taste</p>
         </div>
+
+        <div class="rating-summary">
+          <div class="average-rating">
+            <div class="score">4.8</div>
+            <div class="stars">★★★★★</div>
+            <div class="total-reviews">AVERAGE RATING</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="main-content">
-    <div class="header"><h1>Recent Reviews</h1></div>
-        <div class="reviews-container">
-  
+      <div class="header"><h1>Recent Reviews</h1></div>
+      <div class="reviews-container">
+        <div class="reviews-flex" id="reviewsGrid"></div>
 
-            <div class="reviews-flex" id="reviewsGrid"></div>
-
-            <div class="cta-section">
-                <button class="add-review-btn">Leave a Review</button>
-            </div>
+        <div class="cta-section">
+          <button class="add-review-btn">Leave a Review</button>
         </div>
+      </div>
     </div>
     <!-- Footer -->
-    <Footer class="Footer">
-        <div class="Footer-content">
-            <div class="footer-top">
-                <div class="footer-image">
-                    <img src="https://www.svgrepo.com/show/404627/bakery-baking-bread-food-restaurant.svg" alt="bakery icon" class="footer-icon">
-                    <img src="https://www.svgrepo.com/show/482028/donut-2.svg" alt="donut icon" class="footer-icon">
-                    <img src="https://www.svgrepo.com/show/317230/croissant-love-france-national-culture-paris.svg" alt="croissant icon" class="footer-icon">
-                </div>
-                <div class="footer-links">
-                    <h4>Info</h4>
-                    <ul>
-                        <li><a href="./ourstory.html">OUR STORY</a></li>
-                        <li><a href="./Blog.html">BLOGS</a></li>
-                        <li><a href="./PrivacyPolicy.html">PRIVACY POLICY</a></li>
-                        <li><a href="./Refund.html">REFUND POLICY</a></li>
-                        <li><a href="./Faq.html">FAQs</a></li>
-            
-                    </ul>
-                </div>
+    <footer class="Footer">
+      <div class="Footer-content">
+        <div class="footer-top">
+          <div class="footer-image">
+            <img
+              src="https://www.svgrepo.com/show/404627/bakery-baking-bread-food-restaurant.svg"
+              alt="bakery icon"
+              class="footer-icon"
+            />
+            <img
+              src="https://www.svgrepo.com/show/482028/donut-2.svg"
+              alt="donut icon"
+              class="footer-icon"
+            />
+            <img
+              src="https://www.svgrepo.com/show/317230/croissant-love-france-national-culture-paris.svg"
+              alt="croissant icon"
+              class="footer-icon"
+            />
+          </div>
+          <div class="footer-links">
+            <h4>Info</h4>
+            <ul>
+              <li><a href="./ourstory.html">OUR STORY</a></li>
+              <li><a href="./Blog.html">BLOGS</a></li>
+              <li><a href="./PrivacyPolicy.html">PRIVACY POLICY</a></li>
+              <li><a href="./Refund.html">REFUND POLICY</a></li>
+              <li><a href="./Faq.html">FAQs</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>Connaught Place,Delhi,India</p><br>
-                    <p>Phone: <a href="tel:+91 123456897">+91 123456897</a></p><br>
-                    <p>Email: <a href="mailto:info@lafornaia.com">info@lafornaia.com</a></p>
-                </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Connaught Place,Delhi,India</p>
+            <br />
+            <p>Phone: <a href="tel:+91 123456897">+91 123456897</a></p>
+            <br />
+            <p>
+              Email: <a href="mailto:info@lafornaia.com">info@lafornaia.com</a>
+            </p>
+          </div>
 
-                <div class="footer-hours">
-
-                    <h4>Opening Hours</h4>
-                    <p>Mon–Fri: 7:00 — 19:00</p><br>
-                    <p>Sat–Sun: 8:00 — 17:00</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="social">
-                    <a href="https://www.instagram.com/_rishi1210_/" aria-label="Instagram"><img src="https://www.svgrepo.com/show/506511/instagram.svg" alt="Instagram"></a>
-                    <a href="#" aria-label="Facebook"><img src="https://www.svgrepo.com/show/503338/facebook.svg" alt="Facebook"></a>
-                    <a href="#" aria-label="Twitter"><img src="https://www.svgrepo.com/show/506685/twitter.svg" alt="Twitter"></a>
-                </div>
-                <p class="copyright">© 2025 LA FORNAIA ELEGANTE. All rights reserved.</p>
-            </div>
+          <div class="footer-hours">
+            <h4>Opening Hours</h4>
+            <p>Mon–Fri: 7:00 — 19:00</p>
+            <br />
+            <p>Sat–Sun: 8:00 — 17:00</p>
+          </div>
         </div>
-    </Footer> 
-    <script src="script.js"></script>
-</body>
+
+        <div class="footer-bottom">
+          <div class="social">
+            <a
+              href="https://www.instagram.com/_rishi1210_/"
+              aria-label="Instagram"
+              ><img
+                src="https://www.svgrepo.com/show/506511/instagram.svg"
+                alt="Instagram"
+            /></a>
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="https://www.svgrepo.com/show/503338/facebook.svg"
+                alt="Facebook"
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img
+                src="https://www.svgrepo.com/show/506685/twitter.svg"
+                alt="Twitter"
+            /></a>
+          </div>
+          <p class="copyright">
+            © 2025 LA FORNAIA ELEGANTE. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>

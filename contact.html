@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="./Images/logo.jpeg" type="image/x-icon">
 </head>
 <body>
-    <!-- Nav Bar -->
 <header>
         <nav class="navbar">
             <a href="index.html" class="logo-section">
@@ -37,14 +36,12 @@
             </ul>
         </nav>
     </header>
-    <!-- Contact Us Section -->
     <section class="contact-section"> <div class="header">
         <h1>LA FORNAIA ELEGANTE</h1>
         <p>We'd love to hear from you!</p>
     </div>
 
     <div class="container">
-        <!-- Contact Info -->
         <div class="contact-info">
             <h2>Reach Us</h2>
             <p><strong>📍 Address:</strong>Connaught Place,Delhi,India</p>
@@ -55,8 +52,6 @@
                 Sat – Sun: 8 AM – 5 PM
             </p>
         </div>
-
-        <!-- Contact Form -->
         <div class="contact-form">
             <h2>Send a Message</h2>
             <form>
@@ -68,8 +63,6 @@
             </form>
         </div>
     </div>
-
-    <!-- Map Section -->
     <div class="map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.7066104454!2d77.06889955!3d28.527582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2f648f2b6bb%3A0x64fdf75f1a4bb7a6!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v123456789"
@@ -77,8 +70,6 @@
     </div>
 
     </section>
-    
-    <!-- Footer -->
     <Footer class="Footer">
         <div class="Footer-content">
             <div class="footer-top">
@@ -133,5 +124,28 @@
             </div>
         </div>
     </Footer> 
+<script>
+  const form = document.querySelector(".contact-form form");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+    const subject = form.querySelector('input[placeholder="Subject"]').value;
+    const message = form.querySelector('textarea').value;
+
+    let whatsappMessage = `HELLO LA FORNAIA ELEGANTE!\n`;
+    whatsappMessage += `Name: ${name}\n`;
+    whatsappMessage += `Email: ${email}\n`;
+    whatsappMessage += `Subject: ${subject}\n`;
+    whatsappMessage += `Message: ${message}\n`;
+
+    const whatsappURL = `https://wa.me/6230492790?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+
 </body>
 </html>
