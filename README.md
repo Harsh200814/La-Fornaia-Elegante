@@ -11,7 +11,7 @@ The goal of this project is to design a **functional, user-friendly bakery websi
 
 - Attractive homepage with navigation to different sections  
 - Pages for various bakery items: **Breads, Cakes, Donuts, Cheesecakes, Croissants**  
-- Informational pages: **About Us / Our Story, Contact, FAQ, Privacy Policy, Refund Policy**  
+- Informational pages: **About Us / Our Story, Contact,Cart, FAQ, Privacy Policy, Refund Policy**  
 - Consistent **color theme and typography** matching the bakery brand  
 - **Lightweight, responsive design** for different devices  
 
@@ -41,6 +41,7 @@ The goal of this project is to design a **functional, user-friendly bakery websi
   - `croissant.html` – Croissants menu
   - `donuts.html` – Donuts menu
   - `contact.html` – Contact page
+  - `cart.html` – Cart page
   - `Faq.html` – FAQ page
   - `PrivacyPolicy.html` – Privacy policy
   - `Refund.html` – Refund policy
@@ -64,7 +65,8 @@ The goal of this project is to design a **functional, user-friendly bakery websi
 - Clean, elegant **UI** for a bakery website  
 - **Responsive navigation bar** and pages  
 - Separate sections for **menu items**  
-- Informational pages for **user guidance**  
+- Informational pages for **user guidance**
+- Sends the responses and orders through whatsapp
 - Fully **responsive layout** for desktop, tablet, and mobile  
 
 ---
@@ -74,7 +76,8 @@ The goal of this project is to design a **functional, user-friendly bakery websi
 - Understand **HTML structure** and semantic tags  
 - Apply **CSS** for styling, flexbox, grid, and responsive design  
 - Use **JavaScript** for interactivity and menu navigation  
-- Implement a **multi-page website layout**  
+- Implement a **multi-page website layout**
+- Whatsapp API linking
 - Gain experience in **UI/UX design** and branding  
 
 ---
